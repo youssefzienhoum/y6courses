@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="../css/profilestyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="script" href="">
+</head>
+<body>
+
+    <header>
+        <div class="left-section">
+            <div class="header-logo">
+                <a href="../index.html"><img src="../Logo/Long.png" alt=""></a>
+            </div>
+        </div>
+        <div class="nav_bar">
+            <ul class="navigation">
+            <li class="parent"><a class="link" href="../index.html">Home</a></li>
+            <li class="parent"><a class="link" href="about.html">About</a></li>
+            <li class="parent" id="clients">
+                <a class="link" href="design.html">Categories<i class="fas fa-sort-down down-arrow"></i></a>
+            </li>
+            <li class="parent" id="services">
+                <a class="link" href="tutor-application.html">Become a Tutor!</a>
+            </li>
+            <li class="parent"><a class="link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="mid-section">
+            <form>
+                <span class="material-icons">search</span>
+                <input type="search" placeholder="Search for anything"/>
+
+            </form>
+        </div>
+        <div class="right-section">
+            <img id="dark_mode_icon" src="../images/moon.png" alt="">
+            <!-- <a class="btn" href="sign-up.html" title="Sign Up to Improve Your Learning Experience" >Sign Up</a>
+            <a class="btn" href="login.html" title="Login to your account">Log in</a> -->
+            <a href="profile.html"><img class="header-avatar" src="../images/avatar.png" alt=""></a>
+        </div>
+
+
+
+
+
+
+    </header>
+
+        <div class="profile-page">
+        <div class="overview">
+            <div class="avatar-box">
+                <img class="profile-avatar" src="../images/avatar.png" alt="">
+                <h3 class="name-under-avatar">Youssef</h3>
+                <h5 class="level">Level 20</h5>
+                <div class="level-progress">
+                    <span class="progress"></span>
+                </div>
+                <div class="rating">
+                    <img class="five-stars" src="../images/riLo47oqT.png" alt="">
+                </div>
+            </div>
+            <div class="info-box">
+                <div class="box1">
+                    <h4 class="gen-info">General Information</h4>
+                    <form method="post" target="_blank">
+                        <div>
+                            <span class="bold-info">Full Name:</span>
+                            <input type="text" class="small-info" value="Youssef Islam">
+                        </div>
+                        <div>
+                            <span class="bold-info">Gender:</span>
+                            <input list="genders" class="small-info" value="Male">
+                            <datalist id="genders">
+                                <option value="Male"></option>
+                                <option value="Female"></option>
+                            </datalist>
+                        </div>
+                        <div>
+                            <span class="bold-info">Country:</span>
+                            <input type="text" class="small-info" value="Egypt">
+                        </div>
+                        <div>
+                            <input type="submit" class="edit-info" value="Save Changes">
+
+                        </div>
+                    </form>
+
+                </div>
+                <div class="box2">
+                    <h4 class="gen-info">Personal Information</h4>
+                    <form method="post" target="_blank">
+                        <div>
+                            <span class="bold-info">Email:</span>
+                            <input type="email" class="small-info" value="yi@nn.com">
+                        </div>
+                        <div>
+                            <span class="bold-info">Phone:</span>
+                            <input type="text" class="small-info" value="01741258852">
+                        </div>
+                        <div>
+                            <span class="bold-info">Date Of Birth:</span>
+                            <input type="date" class="small-info" value="2006-01-01">
+                        </div>
+                        <div>
+                            <input type="submit" class="edit-info" value="Save Changes">
+
+                        </div>
+                    </form>
+
+                </div>
+                <div class="box3">
+                    <h4 class="gen-info">Job Information</h4>
+                    <form method="post" target="_blank">
+                        <div>
+                            <span class="bold-info">Title:</span>
+                            <input type="text" class="small-info" value="Front End Developer">
+                        </div>
+                        <div>
+                            <span class="bold-info">Prog. Language:</span>
+                            <input type="text" class="small-info" value="JavaScript">
+                        </div>
+                        <div>
+                            <span class="bold-info">Years Of Experience:</span>
+                            <input type="number" class="small-info" value="5">
+                        </div>
+                        <div>
+                            <input type="submit" class="edit-info" value="Save Changes">
+
+                        </div>
+                    </form>
+
+                </div>
+                <div class="box4">
+                    <h4 class="gen-info">Billing Information</h4>
+                    <form method="post" target="_blank">
+                        <div>
+                            <span class="bold-info">Payment Method:</span>
+                            <input type="text" class="small-info" value="Visa">
+                        </div>
+                        <div>
+                            <span class="bold-info">Email:</span>
+                            <input type="email" class="small-info" value="email@website.com">
+                        </div>
+                        <div>
+                            <span class="bold-info">Subscription:</span>
+                            <input type="text" class="small-info" value="Yearly" readonly>
+                        </div>
+                        <div>
+                            <input type="submit" class="edit-info" value="Save Changes">
+
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="other-data">
+            <div class="skills-card">
+                <h2>My Skills</h2>
+                <p>Complete Skills List</p>
+                <ul class="skills-list">
+                    <li><span class="skill">HTML</span><span class="skill">JavaScript</span><span class="skill">CSS</span></li>
+                    <li><span class="skill"d>Engliah</span><span class="skill">Arabic</span><span class="skill">Spanish</span></li>
+                    <li><span class="skill">Effiency</span><span class="skill">TeamWorker</span></li>
+                    <li><span class="skill">C</span><span class="skill">Python</span><span class="skill">C++</span></li>
+                    <li><span class="skill">Productivity</span><span class="skill">Time Management</span></li>
+                    <li><span class="skill">German</span><span class="skill">French</span></li>
+                    <li><span class="skill">Photoshop</span><span class="skill">Video Editing</span></li>
+                </ul>
+            </div>
+            <div class="activities">
+                <h2>Latest Activities</h2>
+                <p>Activities Done By The User</p>
+                <div class="activity">
+                    <img src="../images/activity-01.png" alt="">
+                    <div class="acheivement">
+                        <span class="acheivement-title">Store</span>
+                        <span class="acheivement-disc">Bought The "Mastering English" Course</span>
+                    </div>
+                    <div class="date">
+                        <span class="acheivement-title">18:10</span>
+                        <span class="acheivement-disc">yesterday</span>
+                    </div>
+                </div>
+                <div class="activity">
+                    <img src="../images/activity-02.png" alt="">
+                    <div class="acheivement">
+                        <span class="acheivement-title">Academy</span>
+                        <span class="acheivement-disc">Got the PHP Certificate</span>
+                    </div>
+                    <div class="date">
+                        <span class="acheivement-title">12:30</span>
+                        <span class="acheivement-disc">last week</span>
+                    </div>
+                </div>
+                <div class="activity">
+                    <img src="../images/activity-03.png" alt="">
+                    <div class="acheivement">
+                        <span class="acheivement-title">Badges</span>
+                        <span class="acheivement-disc">Unlocked The 10 Skills Badge</span>
+                    </div>
+                    <div class="date">
+                        <span class="acheivement-title">15:20</span>
+                        <span class="acheivement-disc">3 monthes ago</span>
+                    </div>
+                </div>
+                <div class="activity">
+                    <img src="../images/activity-01.png" alt="">
+                    <div class="acheivement">
+                        <span class="acheivement-title">Store</span>
+                        <span class="acheivement-disc">Bought The "Learn Python from A-Z" Course</span>
+                    </div>
+                    <div class="date">
+                        <span class="acheivement-title">07:50</span>
+                        <span class="acheivement-disc">last year</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+          <div class="box">
+            <h3>Y6 Courses</h3>
+            <ul class="social">
+              <li>
+                <a href="#" class="facebook">
+                  <i class="bx bxl-facebook-square social-icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="twitter">
+                  <i class="bx bxl-twitter social-icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="youtube">
+                  <i class="bx bxl-youtube social-icon"></i>
+                </a>
+              </li>
+            </ul>
+            <p class="text">
+              Create an online video course, reach students across the globe, and
+              earn money.
+            </p>
+          </div>
+          <div class="box">
+            <div class="line">
+              <div class="info">
+                Egypt, Giza, Inside The Sphinx, Room Number 220
+              </div>
+            </div>
+            <div class="line">
+              <div class="info">Business Hours: From 10:00 To 18:00</div>
+            </div>
+            <div class="line">
+              <div class="info">
+                <span><b>Call Us:</b></span>
+                <span>+20123456789</span>
+                <span>+20198765432</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">Made With &lt;3 By 6Y</p>
+      </div>
+      <script src="../js/profile.js">
+
+      </script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6Y Courses</title>
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/home.css" />
+    <!--! Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  </head>
+
+  <body>
+    <!--@ Start Header -->
+    <nav class="navigationWrapper">
+      <div class="logoWrapper">
+        <img class="logo" src="images/logo.png" alt="logo" title="6Y Courses" />
+      </div>
+      <ul class="navigation">
+        <li class="parent"><a class="link" href="index.html">Home</a></li>
+        <li class="parent"><a class="link" href="pages/about.html">About</a></li>
+        <li class="parent" id="clients">
+          <a class="link" href="pages/design.html"
+            >Categories<i class="fas fa-sort-down down-arrow"></i
+          ></a>
+        </li>
+        <li class="parent" id="services">
+          <a class="link" href="pages/tutor-application">Become a Tutor</a>
+        </li>
+        <li class="parent"><a class="link" href="pages/contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Search Section -->
+      <div class="search">
+        <input
+          type="text"
+          class="searchTerm"
+          id="myInput"
+          onkeyup="searchBox()"
+          placeholder="Search here..."
+        />
+        <div class="search-icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <ul class="search-result" id="myUL" style="display: none;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="pages/login.html">Login</a></li>
+          <li><a href="pages/sign-up.html">Signup</a></li>
+          <li><a href="pages/payment.html">payment</a></li>
+          <li><a href="pages/pricing.html">pricing</a></li>
+          <li><a href="pages/contact.html">contact</a></li>
+          <li><a href="pages/revHtml.html">Review</a></li>
+        </ul>
+      </div>
+
+      <!-- SignIn\Up Section -->
+      <div>
+        <a
+          class="signup-btn btn"
+          href="pages/sign-up.html"
+          title="Sign Up to Improve Your Learning Experience"
+          >Sign Up</a
+        >
+        <a
+          class="login-btn btn"
+          href="pages/login.html"
+          title="Login to your account"
+          >Log in</a
+        >
+      </div>
+
+      <!-- Profile -->
+      <div class="profile">
+        <a href="pages/profile.html">
+          <img class="avatar" src="images/avatar.png" alt="avatar" />
+        </a>
+      </div>
+    </nav>
+    <!--@ End Header -->
+    <!--@ Start Landing -->
+    <div class="landing">
+      <img src="images/landing.jpg" />
+      <div class="title">
+        <h1>Prep for your IT certificate</h1>
+        <p>
+          . Start learning toward AWS certification, CompTIA A+ certification,
+          and more.
+        </p>
+      </div>
+    </div>
+    <!--@ End Landing -->
+
+    <!--@ Start Services -->
+    <div class="services">
+      <h2 class="main-title">Services</h2>
+      <div class="container">
+        <!--* Box 1 -->
+        <div class="box">
+          <h3>Reviews</h3>
+          <div class="info">
+            <a href="pages/revHtml.html">Details</a>
+          </div>
+        </div>
+        <!--* Box 2 -->
+        <div class="box">
+          <h3>Pricing</h3>
+          <div class="info">
+            <a href="pages/pricing.html">Details</a>
+          </div>
+        </div>
+        <!--* Box 3 -->
+        <div class="box">
+          <h3>WebDevelopment</h3>
+          <div class="info">
+            <a href="#">Details</a>
+          </div>
+        </div>
+        <!--* Box 4 -->
+        <div class="box">
+          <h3>Coding</h3>
+          <div class="info">
+            <a href="#">Details</a>
+          </div>
+        </div>
+        <!--* Box 5 -->
+        <div class="box">
+          <h3>Security</h3>
+          <div class="info">
+            <a href="#">Details</a>
+          </div>
+        </div>
+        <!--* Box 6 -->
+        <div class="box">
+          <h3>Marketing</h3>
+          <div class="info">
+            <a href="#">Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--@ End Services -->
+
+    <!--@ Start Discount -->
+    <div class="discount" id="discount">
+      <div class="image">
+        <div class="content">
+          <h2>We Have A Discount</h2>
+          <p>
+            Want to save some money? For a limited time, enjoy 60% off your
+            entire purchase! Don't miss out on this amazing opportunity to snag
+            the items you've been eyeing. This offer won't last forever, so shop
+            now!
+          </p>
+        </div>
+      </div>
+      <div class="form">
+        <div class="content">
+          <h2>Request A Discount</h2>
+          <form action="">
+            <input
+              class="input"
+              type="text"
+              placeholder="Your Name"
+              name="name"
+            />
+            <input
+              class="input"
+              type="email"
+              placeholder="Your Email"
+              name="email"
+            />
+            <input
+              class="input"
+              type="text"
+              placeholder="Your Phone"
+              name="mobile"
+            />
+            <textarea
+              class="input"
+              placeholder="Tell Us About Your Needs"
+              name="message"
+            ></textarea>
+            <input type="submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--@ End Discount -->
+    <!--@ Start Pricing and Review -->
+    <div class="pricing-and-review">
+      <div class="flex-container">
+        <div class="price-heading">
+          <h2>Pricing</h2>
+          <a href="pages/pricing.html" class="link">Click here</a>
+        </div>
+        <div class="review">
+          <p class="review-text">Discover <br> what our clients are <br> saying!</p>
+          <a href="pages/revHtml.html" class="link">Click here</a>
+        </div>
+      </div>
+    </div>
+    <!--@ End Pricing and Review -->
+    <!-- @ Start Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="box">
+          <h3>Y6 Courses</h3>
+          <ul class="social">
+            <li>
+              <a href="#" class="facebook">
+                <i class="bx bxl-facebook-square social-icon"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="twitter">
+                <i class="bx bxl-twitter social-icon"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="youtube">
+                <i class="bx bxl-youtube social-icon"></i>
+              </a>
+            </li>
+          </ul>
+          <p class="text">
+            Create an online video course, reach students across the globe, and
+            earn money.
+          </p>
+        </div>
+        <div class="box">
+          <div class="line">
+            <div class="info">
+              Egypt, Giza, Inside The Sphinx, Room Number 220
+            </div>
+          </div>
+          <div class="line">
+            <div class="info">Business Hours: From 10:00 To 18:00</div>
+          </div>
+          <div class="line">
+            <div class="info">
+              <span><b>Call Us:</b></span>
+              <span>+20123456789</span>
+              <span>+20198765432</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">Made With &lt;3 By 6Y</p>
+    </div>
+    <!--@ End Footer -->
+  </body>
+  <script>
+    function searchBox() {
+      var input = document.getElementById("myInput");
+      var userInput = input.value.toUpperCase();
+      var ul = document.getElementById("myUL");
+
+      // Show or hide the list based on input value
+      if (userInput !== "") {
+        ul.style.display = "block";
+      } else {
+        ul.style.display = "none";
+      }
+
+      var listItems = ul.getElementsByTagName("li");
+
+      // Loop through all list  items, and hide those who don't match the search query
+      for (var i = 0; i < listItems.length; i++) {
+        var anchor = listItems[i].querySelector("a");
+
+        // Get the text content of the anchor element and convert it to uppercase
+        var listItemText = anchor.textContent;
+        var listItemTextUpperCase = listItemText.toUpperCase();
+
+        // Check if the search query matches the text content of the list item
+        if (listItemTextUpperCase.includes(userInput)) {
+          listItems[i].style.display = "";
+        } else {
+          listItems[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+</html>

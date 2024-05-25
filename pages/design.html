@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> Programming courses</title>
+    <link rel="icon" type="image/x-icon" href="../images/PNG.png">
+    <!-- theme-1 css file -->
+    <link rel="stylesheet" href="../css/course-theme-1.css" id="theme1" >
+    <!-- theme-2 css file -->
+    <link rel="stylesheet" href="../css/course-theme-2.css" id="theme2" disabled >
+    <!-- Normalize css file -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- A Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;
+    0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,
+    300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- An Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="page">
+        <!-- nav-bar -->
+        <nav>
+            <img src="../images/Long.png">
+            <div class="links">
+                <a href="../index.html" target="_blank">HOME</a>
+                <a href="about.html" target="_blank">ABOUT</a>
+                <a href="design.html" target="_blank">CATEGORIES</a>
+                <button id="arrownav" class="arrow-5"><i class='bx bx-down-arrow'></i></button>
+                <a href="contact.html" target="_blank" class="contact">CONTACT</a>
+                <a href="tutor-application.html" target="_blank" class="TUTOR">TUTOR</a>
+                <div class="dropmenu" id="list">
+                    <ul>
+                        <li>Programming</li>
+                        <li>Design</li>
+                        <li>productivity</li>
+                        <li>Languages</li>
+                    </ul>
+                </div>
+            </div>
+            <button id="replace" class="replace">
+                <i class='bx bxs-sun' id="icon1"></i> 
+                <i class='bx bxs-moon' id="icon2"></i>
+            </button>
+            <input type="search" class="search" placeholder="search here">
+            <button class="searchbutton"><i class='bx bx-search-alt-2'></i></button>
+            <button class="login"><a href="login.html" target="_blank">LOG IN</a></button>
+            <button class="signup"><a href="sign-up.html">SIGN UP</a></button>
+            <button class="profile"><a href="profile.html"><img src="../images/avatar.png"></a></button>
+        </nav>
+        <!-- side-bar -->
+        <aside>
+            <div class="topics">
+                <button class="arrow-1" id="arrow-1" ><i class='bx bx-down-arrow'></i></button>
+                <h2> Topics </h2>
+                    <div id="inputs-1">
+                        <input type="checkbox" id="Web">
+                        <label for="Web">Web Development</label>
+                        <br>
+                        <input type="checkbox" id="Game">
+                        <label for="Game">Game Development</label>
+                        <br>
+                        <input type="checkbox" id="Mobile">
+                        <label for="Mobile">Mobile App</label>
+                        <br>
+                        <input type="checkbox" id="Desktop">
+                        <label for="Desktop">Desktop App</label>
+                        <br>
+                        <input type="checkbox" id="fash">
+                        <label for="fash">AI</label>
+                    </div>
+            </div>
+                <button class="arrow-2" id="arrow-2" ><i class='bx bx-down-arrow'></i></button> 
+                <div class="lang"> 
+                        <h2> Languages </h2>
+                    <div id="inputs-2">
+                        <input type="checkbox" id="Arabic">
+                        <label for="Arabic">Arabic</label>
+                        <br>
+                        <input type="checkbox" id="Eng">
+                        <label for="Eng">English</label>
+                        <br>
+                        <input type="checkbox" id="French">
+                        <label for="French">French</label>
+                        <br>
+                        <input type="checkbox" id="Spanish">
+                        <label for="Spanish">Spanish</label>
+                        <br>
+                        <input type="checkbox" id="German">
+                        <label for="German">German</label>
+                    </div>
+                </div> 
+                <div class="levels"> 
+                    <h2> Level </h2>
+                    <button class="arrow-3" id="arrow-3" ><i class='bx bx-down-arrow'></i></button> 
+                    <div id="inputs-3">
+                        <input type="checkbox" id="all">
+                        <label for="all">All levels</label>
+                        <br>
+                        <input type="checkbox" id="beg">
+                        <label for="beg">Beginner</label>
+                        <br>
+                        <input type="checkbox" id="middle">
+                        <label for="middle">middle</label>
+                        <br>
+                        <input type="checkbox" id="Expert">
+                        <label for="Expert">Expert</label>
+                    </div>
+                </div> 
+                <div class="price"> 
+                    <h2> price </h2>
+                    <button class="arrow-4" id="arrow-4" ><i class='bx bx-down-arrow'></i></button> 
+                    <div id="inputs-4">
+                        <input type="checkbox" id="paid">
+                        <label for="paid">Paid</label>
+                        <br>
+                        <input type="checkbox" id="Free">
+                        <label for="Free">Free</label>
+                    </div>
+                </div>
+        </aside>
+        <!-- content -->
+        <section>
+            <h1 id="head"></h1>
+            <div class="courses">
+                <div class="video">
+                    <img src="../images/zero.jpg" class="zero">
+                    <p> Html and css basics course.</p>
+                    <p> Elzero web school</p>
+                    <p><span>4</span>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bx-star'></i></p>
+                    <br>
+                    <button><a href="video.html">Watch it</a></button> 
+                </div>
+                <div class="video">
+                    <img src="../images/c++.png" class="hadhod">
+                    <p> introductin in programming with C++.</p>
+                    <p> Abo hadhod</p>
+                    <p><span>3.5</span>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i></p>
+                    <br>
+                    <button><a href="video.html">Watch it</a></button> 
+                </div>
+                <div class="video">
+                    <img src="../images/oop.png" class="oop">
+                    <p> OOP with C++ to Beginners.</p>
+                    <p>Ahmed Adel</p>
+                    <p><span>3.5</span>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                    <i class='bx bx-star'></i></p>
+                    <br>
+                    <button><a href="video.html">Watch it</a></button> 
+                </div>
+                <div class="video">
+                    <img src="../images/data.png" class="data">
+                    <p> Full course data Data structures.</p>
+                    <p> freecodecamp. </p>
+                    <p><span>4</span>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bx-star'></i></p>
+                    <br>
+                    <button><a href="video.html">Watch it</a></button> 
+                </div>
+            </div>
+            <br>
+            <div class="popular-topics">
+                    <h2>Popular topics</h2>
+                    <div class="popular">
+                            <p>.Net C#</p>
+                            <p>React frame work</p>
+                            <p>Machine learning</p>
+                            <p>Python</p>
+                            <p>Flutter</p>
+                            <p>3D Game</p>
+                            <p>UI\UX</p>
+                            <p>Chat Gpt</p>
+                    </div>
+            </div>
+            <div class="morecourses">
+                <div class="course">
+                    <img src="../images/python.png">
+                    <p>Python Basics to Beginners.</p>
+                    <p>Andrew Williams</p>
+                    <p>
+                        <span>3</span>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bx-star'  ></i>
+                        <i class='bx bx-star'  ></i>
+                    </p>
+                    <button>Watch it</button>
+                </div>
+                <div class="course">
+                    <img src="../images/java.png">
+                    <p>Learn java script in 1 hour.</p>
+                    <p>programmin with mosh</p>
+                    <p>
+                        <span>4</span>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bx-star'  ></i>
+                    </p>
+                    <button>Watch it</button>
+                </div>
+                <div class="course">
+                    <img src="../images/al.png">
+                    <p>Intro Algorithm Thinking and Data structures</p>
+                    <p>Kmr script</p>
+                    <p>
+                        <span>4.5</span>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </p>
+                    <button>Watch it</button>
+                </div>
+                <div class="course">
+                    <img src="../images/ui.png">
+                    <p>UX Design & User Experience Design Course - Theory Only</p>
+                    <p>Daniel walter scott</p>
+                    <p>
+                        <span>3.5</span>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star-half' ></i>
+                        <i class='bx bx-star' ></i>
+                    </p>
+                    <button>Watch it</button>
+                </div>
+            </div>
+            <div class="tablediv">
+                <table >
+                    <caption>week table</caption>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Hour</th>
+                            <th>Content</th>
+                            <th>Creator</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>12:00</td>
+                            <td>GUI C#</td>
+                            <td>Adel Nesim</td>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>5:30</td>
+                            <td>UI/UX</td>
+                            <td>Zoe Hong</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>9:00</td>
+                            <td>Flutter</td>
+                            <td>Waelabo hamza</td>
+                        </tr>
+                        <tr>
+                            <td>wednesday</td>
+                            <td>9:00</td>
+                            <td>Ruby</td>
+                            <td>Envato Tuts+</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>3:00</td>
+                            <td>Java</td>
+                            <td>Mohamed gaber</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+            <!-- Start Footer -->
+            <footer>
+                <div class="container">
+                    <div class="box">
+                        <h3>6YCourses</h3>
+                        <ul class="social">
+                        <li>
+                            <a href="#" class="facebook">
+                            <i class="bx bxl-facebook-square social-icon"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="twitter">
+                            <i class="bx bxl-twitter social-icon"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="youtube">
+                            <i class="bx bxl-youtube social-icon"></i>
+                            </a>
+                        </li>
+                        </ul>
+                        <p class="text">
+                        Create an online video course, reach students across the globe, and
+                        earn money.
+                        </p>
+                    </div>
+                    <div class="box">
+                        <div class="line">
+                            <div class="info">
+                                Egypt, Giza, Inside The Sphinx, Room Number 220
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="info">Business Hours: From 10:00 To 18:00</div>
+                        </div>
+                        <div class="line">
+                            <div class="info">
+                                <span><b>Call Us:</b></span>
+                                <span>+20123456789</span>
+                                <span>+20198765432</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="copyright">Made With &copy; By 6Y</p>
+            </div>
+            </footer>
+            <!-- End-footer -->
+    </div>
+    <script src="../js/design.js"></script>
+</body>
+</html>

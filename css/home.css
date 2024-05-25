@@ -1,0 +1,513 @@
+:root {
+  --main-color: #f5be6b;
+}
+
+* {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: white;
+  transition: background-color 0.5s ease;
+}
+
+.navigationWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #222;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+  color: white;
+  text-transform: uppercase;
+
+  .logo {
+    height: 70px;
+    cursor: pointer;
+  }
+
+}
+
+.navigation {
+  display: flex;
+  list-style-type: none;
+
+  li {
+    opacity: 1;
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .parent {
+    padding: 0 10px;
+    cursor: pointer;
+
+    .link {
+      position: relative;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+      color: white;
+
+      &:hover {
+        color: var(--main-color);
+      }
+    }
+  }
+}
+
+.down-arrow {
+  margin-left: 5px;
+  align-self: flex-start;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchTerm {
+  border: 3px solid var(--main-color);
+  width: 100%;
+  padding: 8px;
+  height: 22px;
+  border-radius: 10px;
+  margin-right: 10px;
+  z-index: 2;
+  transition: 0.3s;
+}
+
+.searchTerm:focus {
+  outline: none;
+  padding-right: 60px;
+}
+
+.search-icon {
+  width: 60px;
+  height: 45px;
+  background-color: #333;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-icon i:hover {
+  transform: scale(1.1);
+  color: var(--main-color);
+}
+
+
+.search-icon i {
+  color: white;
+  font-size: 20px;
+  transition: all 0.1s ease-in-out;
+}
+
+.search-result {
+  width: 258px;
+  position: absolute;
+  top: 33px;
+  z-index: 1;
+}
+
+#myUL li a {
+  border: 1px solid #222;
+  background-color: #f6f6f6;
+  padding: 12px;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+
+#myUL li:last-child a {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+.btn {
+  background-color: var(--main-color);
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 15px;
+  font-size: 15px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  color: var(--main-color);
+  background-color: #ffffff;
+  padding: 15px 30px;
+  box-shadow: 0px 0px 10px var(--main-color);
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+  &:hover{
+    transform: scale(1.1);
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px var(--main-color);
+  }
+}
+
+/************************ Start Landing ************************/
+.landing {
+  position: relative;
+
+  img {
+    height: 100vh;
+    width: 100%;
+  }
+}
+
+.title {
+  position: absolute;
+  top: 40%;
+  left: 50px;
+  color: #ffffff;
+
+  h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+  }
+
+  p {
+    font-weight: 500;
+  }
+}
+
+/************************@ End Landing ************************/
+
+/*********************** Start Services ***********************/
+.main-title {
+  text-transform: uppercase;
+  margin: 0 auto 60px;
+  border: 2px solid black;
+  padding: 10px 20px;
+  font-size: 30px;
+  width: fit-content;
+}
+
+.services {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.services .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.services .box {
+  background-color: white;
+  box-shadow: 0 10px 20px 0 rgb(0 0 0 / 15%), 0 3px 5px 0 rgb(0 0 0 / 15%);
+  transition: 0.3s;
+}
+
+.services .box:hover {
+  transform: translateY(-5px);
+}
+
+.services .box h3 {
+  text-align: center;
+  margin: 20px;
+  font-size: 30px;
+}
+
+.services .box .info {
+  padding: 15px;
+  background-color: #f9f9f9;
+  text-align: right;
+}
+
+.services .box .info a {
+  color: var(--main-color);
+  background-color: #191919;
+  padding: 10px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: var(--main-color);
+    color: black;
+  }
+}
+
+/**********************@ End Services ***********************/
+
+/********************** Start Discount **********************/
+.discount {
+  min-height: 100vh;
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.discount .image {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.discount .image::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(245, 190, 107);
+  z-index: -1;
+}
+
+@media (max-width: 991px) {
+  .discount .image {
+    flex-basis: 100%;
+  }
+}
+
+.discount .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 50%;
+}
+
+@media (max-width: 991px) {
+  .discount .form {
+    flex-basis: 100%;
+  }
+}
+
+.discount .form .input {
+  display: block;
+  width: 92%;
+  margin-bottom: 25px;
+  padding: 15px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #f9f9f9;
+  caret-color: var(--main-color);
+}
+
+.discount .form textarea.input {
+  resize: none;
+  height: 200px;
+}
+
+.discount .form .input:focus {
+  outline: none;
+}
+
+.discount .form [type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.discount .form [type="submit"]:hover {
+  background-color: #191919;
+}
+
+.discount .content {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.discount .content h2 {
+  font-size: 40px;
+  letter-spacing: -2px;
+  margin: 20px;
+}
+
+.discount .content p {
+  line-height: 1.6;
+  font-size: 18px;
+  max-width: 500px;
+}
+
+/*********************@ End Discount **********************/
+
+/***************** Start Pricing and Review *****************/
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.price-heading h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 40px;
+  position: relative;
+  margin-bottom: 70px;
+  text-transform: uppercase;
+}
+
+.price-heading h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  background-color: #333;
+  bottom: -30px;
+  width: 120px;
+}
+
+.price-heading h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  bottom: -38px;
+  background-color: white;
+}
+
+.price-heading p {
+  width: 550px;
+  max-width: 100%;
+  line-height: 2;
+  color: #777;
+}
+
+.review-text {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.pricing-and-review .link {
+  display: block;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  width: inherit;
+  text-align: center;
+  background-color: var(--main-color);
+  color: white;
+  padding: 15px 30px;
+  transition: 0.3s;
+}
+.pricing-and-review .link:hover{
+    padding: 100px;
+    box-shadow: 0px 0px 10px var(--main-color);
+  }
+/****************@ Start Pricing and Review *****************/
+
+/*********************** Start Footer ***********************/
+.footer {
+  background-color: #191919;
+  padding: 30px 60px 10px;
+}
+
+.footer .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.footer .box h3 {
+  color: white;
+  font-size: 50px;
+  margin: 0 0 20px;
+}
+
+.footer .box .social {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.footer .box .social li {
+  margin-right: 15px;
+}
+
+.footer .box .social li a {
+  background-color: #313131;
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+.footer .box .social .facebook:hover {
+  background-color: #1877f2;
+  border-radius: 5%;
+}
+
+.footer .box .social .twitter:hover {
+  background-color: #1da1f2;
+  border-radius: 5%;
+}
+
+.footer .box .social .youtube:hover {
+  background-color: #ff0000;
+  border-radius: 5%;
+}
+
+.footer .box .text {
+  line-height: 2;
+  color: #b9b9b9;
+}
+
+.footer .box .line {
+  color: #b9b9b9;
+  margin-bottom: 30px;
+}
+
+.footer .box .line .info {
+  line-height: 1.7;
+  flex: 1;
+}
+
+.footer .box .line .info span {
+  display: block;
+  font-weight: 600;
+  color: #f5be6b;
+}
+
+
+.footer .copyright {
+  padding: 25px 0;
+  text-align: center;
+  color: white;
+  margin: 50px 0 0;
+  border-top: 1px solid #444;
+}
+
+/**********************@ End Footer ***********************/

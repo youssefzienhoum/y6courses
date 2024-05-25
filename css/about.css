@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+   text-decoration: none;
+   list-style-type: none;
+}    
+:root {
+   --main-color: hsl(36, 87%, 69%);
+   --sec-color: white; 
+   --bg-color: white;
+   --txt1-color: #888;
+   --txt2-color: black; 
+   --border-color: #DCDCE5;
+   --Sub-color-1:black;
+   --Sub-color-2:rgb(215, 214, 214);
+ }
+ 
+
+ body {
+   font-family: "Roboto", sans-serif;
+   background-color: white ;
+   margin: 0;
+ }
+
+
+ header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 72px;
+   padding: 0px 16px;
+   background-color: #222;
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px 0px;
+ }
+ 
+ .left-section{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ 
+ .left-section img{
+   width: 124px;
+   margin-top: 16px;
+   margin-bottom: 6px;
+ }
+ 
+ .navigation {
+   display: flex;
+   list-style-type: none;
+ 
+   li {
+     opacity: 1;
+     list-style-type: none;
+     color: var(--sec-color);
+     text-decoration: none;
+ 
+   }
+ 
+   .parent {
+     padding: 0 10px;
+     cursor: pointer;
+ 
+     .link {
+       position: relative;
+       display: flex;
+       align-items: center;
+       text-decoration: none;
+       font-size: 16px;
+       color: var(--main-color);
+       
+ 
+       &:hover {
+           color: white;
+       }
+     }
+   }
+ }
+ 
+ .down-arrow {
+   margin-left: 5px;
+   align-self: flex-start;
+ }
+ 
+ 
+ .mid-section{
+   display: flex;
+   align-items: center;
+   margin-left: 4%;
+ }
+ 
+ .mid-section form{
+   margin-bottom: 16px;
+   display: flex;
+   align-items: center;
+   width: 400px;
+   padding: 14px;
+   border-radius: 28px;
+   background-color: #222;
+   border: 1px solid var(--main-color);
+   margin-top: 16px;
+   height: 10px;
+ }
+ 
+ .mid-section input{
+   width: 100%;
+   color: var(--main-color);
+   margin-left: 14px;
+   outline: none;
+   border: none;
+   background: transparent;
+   width: 300px;
+   padding: 12px;
+   font-size: 16px;
+   font-family: "Open Sans", sans-serif;
+ }
+ 
+ .mid-section input::placeholder,span{
+   color: var(--main-color);
+ 
+ }
+ .mid-section span{
+   padding: 6px;
+ }
+ 
+ #dark_mode_icon{
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+   padding-right: 18px;
+ }
+ 
+.right-section .btn {
+ position: relative;
+ background-color: var(--main-color);
+ color: #000;
+ border-radius: 25px;
+ padding: 6px 10px;
+ font-size: 15px;
+ text-align: center;
+ transition: 0.3s ease-in-out;
+ margin-right: 18px;
+ text-decoration: none;
+ }
+
+.right-section .btn:hover {
+ background-color: var(--main-color-lighter); /* Darken the button on hover */
+}
+
+ 
+ .right-section .btn:hover {
+ color: var(--main-color);
+ background-color: #ffffff;
+ }
+ .right-section{
+ display:flex
+ }
+ 
+ 
+ .header-avatar {
+   width: 3vw; 
+   height: auto; 
+   padding-right: 1.5vw; 
+   margin-top: 0.5vw; 
+}
+
+ 
+ /* End Header */
+
+.poppins-medium {
+   font-family: "Poppins", sans-serif;
+   font-weight: 500;
+   font-style: normal;
+}
+
+.section {
+   width:100%;
+   min-height:100vh;
+  background-color:rgb(220, 234, 229);
+
+}
+
+.container {
+   width: 80%;
+   display: flex; /* Change to flexbox layout */
+   margin: auto;
+   padding-top: 100px;
+ }
+ 
+.content-section {
+   flex: 1; /* Allow content section to grow */
+ }
+ 
+.image-section {
+   flex: 1;
+   
+ }
+.image-section img {
+   width: 100%;
+   height: auto;
+   padding-left:60px;
+}
+.content-section title {
+   text-transform: uppercase;
+   font-size: 28px;
+}
+.content-section .content h3 {
+   margin-top: 20px;
+   color: rgb(31, 31, 33);
+}
+.content-section .content .button{
+   margin-top: 30px;
+}
+.content-section .content  .button a{
+   background-color: black;
+   padding: 12px 40px;
+   text-decoration: none;
+   color: whitesmoke;
+   font-size: 25px;
+   letter-spacing: 1.5px;
+} 
+.content-section .content  .button a:hover{
+   background-color:  rgb(69, 79, 76);
+   color: black;
+}
+.content-section .social i{
+   font-size: 30px;
+   margin-top: 20px;
+   padding: 0px 10px;
+   color:rgb(11, 11, 81);
+}
+.content-section .social i:hover{
+  
+   color:black;
+
+}
+.footer {
+   background-color: #191919;
+   padding: 30px 60px 10px;
+ }
+
+ .footer .container {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 40px;
+ }
+
+ .footer .box h3 {
+   color: white;
+   font-size: 50px;
+   margin: 0 0 20px;
+ }
+
+ .footer .box .social {
+   display: flex;
+   margin-bottom: 20px;
+ }
+
+ .footer .box .social li {
+   margin-right: 15px;
+ }
+
+ .footer .box .social li a {
+   background-color: #313131;
+   color: #b9b9b9;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 50px;
+   height: 50px;
+   transition: 0.3s;
+ }
+
+ .footer .box .social .facebook:hover {
+   background-color: #1877f2;
+ }
+
+ .footer .box .social .twitter:hover {
+   background-color: #1da1f2;
+ }
+
+ .footer .box .social .youtube:hover {
+   background-color: #ff0000;
+ }
+
+ .footer .box .text {
+   line-height: 2;
+   color: #b9b9b9;
+ }
+
+ .footer .box .line {
+   color: #b9b9b9;
+   margin-bottom: 30px;
+ }
+
+ .footer .box .line .info {
+   line-height: 1.7;
+   flex: 1;
+ }
+
+ .footer .box .line .info span {
+   display: block;
+ }
+
+ .footer .copyright {
+   padding: 25px 0;
+   text-align: center;
+   color: white;
+   margin: 50px 0 0;
+   border-top: 1px solid #444;
+ }
+@media screen and (max-width: 768px) {
+    .header {
+      padding: 0 8px; /* Reduce padding on smaller screens */
+      height: 60px; /* Adjust header height */
+    }
+    .parent {
+        width: 100%;
+        display: flex;
+    }
+  
+    .mid-section form {
+      width: 100%; 
+      margin-top: 0; 
+    }
+  
+    .right-section {
+      display: flex; /* Ensure right section elements stay inline */
+      flex-direction: column-reverse; /* Stack elements vertically on mobile */
+    }
+  
+    .right-section .btn {
+      margin-right: 0; 
+      margin-bottom: 10px; 
+    }
+  
+    /* Content section adjustments */
+    .container {
+      padding-top: 20px; /* Reduce top padding on mobile */
+    }
+  
+    .content-section,
+    .image-section {
+      flex: 1 1 0; 
+      padding: 10px; 
+    }
+  
+    .image-section img {
+      padding-left: 0; /* Remove left padding for image */
+    }
+  
+    .content-section .title {
+      font-size: 22px; /* Adjust title size for mobile */
+    }
+  
+    .content-section .content h3,
+    .content-section .content .button a,
+    .content-section .social i {
+      font-size: 16px; /* Adjust font sizes for mobile */
+    }
+    .content-section .content .button{
+        padding: 8px;
+        text-align: center;
+      }
+    .content-section .content .button a {
+      padding: 8px 20px;
+      ; /* Adjust button padding for mobile */
+    }
+  
+    /* Footer adjustments */
+    .footer .container {
+      grid-template-columns: 1fr; /* Make footer elements stack on mobile */
+      gap: 20px; /* Reduce gap between elements */
+    }
+  
+    .footer .box h3 {
+      font-size: 30px; /* Reduce heading size for mobile */
+    }
+  
+    .footer .box .social li {
+      margin-right: 10px; /* Reduce margin between social icons */
+    }
+  
+   .container {
+       width: 80%;
+       display: flex;
+       margin: auto;
+       padding-top: 50px;
+   }
+   .content-section {
+       float: none;
+       width: 100%;
+       display: block;
+       margin: auto;
+   }
+   .image-section {
+       float: none;
+       width: 100%;
+   }
+   .image-section img {
+       width: 100%;
+       height: auto;
+       display: block;
+       margin: auto;
+   }
+   
+   .content-section .title {
+       text-align: center;
+       font-size: 19px;
+   }
+   .content-section .content .button {
+       text-align: center;
+       font-size: 19px;
+   }
+   .content-section .content .button a {
+       padding: 9px 30px;
+   }
+   .content-section .social {
+       text-align: center;
+   }
+}
+
+/* Here is the dark  mode styling , we will make JS coe to get it working  */
+.dark-mode {
+   background-color: #000000;
+   color: #ffffff; /* Change text color to white */
+}
+.dark-mode .section{
+   background-color: #000000;
+}
+.dark-mode .section h3{
+   color: #e0bb82
+}
+.dark-mode .section h1{
+   color: #f5be6b
+}
+.dark-mode .btn {
+   background-color: #f5be6b; /* Change button background color */
+   color: #000000; /* Change button text color */
+}
+
+.dark-mode .content-section {
+   background-color: #000000; /* Change content section background color */
+}
+
+.dark-mode .content-section .button a {
+   background-color: #f5be6b;
+   color: whitesmoke;
+}
+
+.dark-mode .content-section .button a:hover {
+   background-color: black;
+   color:#f5be6b;
+}
+
+.dark-mode .content-section .social i {
+   color: #ffffff; /* Change social icon color */
+}
+
+.dark-mode .content-section .social i:hover {
+   color:  #f5be6b;
+}
+
+.btn {
+   background-color: #000000;
+   color: #f5be6b;
+}
